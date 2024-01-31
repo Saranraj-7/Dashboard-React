@@ -1,6 +1,6 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../components/Header.css';
+import './Header.css';
 import card_1 from "../Asset/card_1.png";
 import card_2 from "../Asset/flow2.png";
 

@@ -3,7 +3,7 @@ import { Row, Col } from 'react-bootstrap';
 import Canvas from './Offcanvas';
 import { InputGroup, FormControl } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../components/Header.css';
+import './Header.css';
 import logo from "../Asset/apple.png";
 
 const Header = ({selectedComponent,setSelectedComponent}) => {
