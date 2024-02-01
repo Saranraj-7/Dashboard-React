@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import Calculator from './Calculator';
 import Form from './Form';
+import Sidebar from './Sidebar';
 
 function Canvas({ setSelectedComponent }) {
   const [show, setShow] = useState(false);
@@ -28,7 +29,7 @@ function Canvas({ setSelectedComponent }) {
           <Offcanvas.Title>Features</Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
-          <div className='d-flex flex-column'>
+           <div className='d-flex flex-column'>
             <span  onClick={() => handleComponentClick('Calculator')} className='fea py-2'>
               Calculator
             </span>
@@ -38,7 +39,7 @@ function Canvas({ setSelectedComponent }) {
             <span className='fea py-2'>DashBoard</span>
             <span className='fea py-2'>FAQ</span>
             <span className='fea py-2'>About</span>
-          </div>
+          </div> 
         </Offcanvas.Body>
       </Offcanvas>
     </>
