@@ -1,8 +1,8 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Header.css';
-import card_1 from "../Asset/flow1.png";
-import card_2 from "../Asset/flow2.png";
+import flow1 from '../Asset/flow1.png';
+import flow2 from '../Asset/flow2.png';
 
 const userData = [
   {
@@ -599,18 +599,17 @@ const Dashboard = () => {
   return (
     <div className=" w-100">
       <div className='my-3'>
-        <span className='fw-bold mx-3'>Flow Charts</span>
+        <span className='mx-3 fw-semibold fs-4'>Flow Charts</span>
       </div>
-      <div className='d-flex flex-column flex-md-row'>
-        <div className='mx-3 mx-lg-5'>
-          <img src={card_1} className='d-md-none' style={{ width:'100%',height:'auto'}}/>
-          <img src={card_1} className='mx-5 d-none d-md-inline-flex' style={{ width:'250px',height:'auto'}}/>
+      <div className='d-flex flex-column flex-md-row justify-content-center'>
+        <div className='mx-3   mx-lg-5'>
+        <img src={flow1} alt="image" width= '240px' height= '230px' />;
         </div>
         <div className='mx-3 mt-3 mt-md-0 ms-lg-5'>
-          <img src={card_2} style={{ width:'100%',height:'auto'}}/>
+        <img src={flow2} alt="image"  />;
         </div>
       </div>
-      <div className='mx-3 mt-4' style={{ overflowX: 'auto', maxWidth: '100%' }}>
+      <div className='mx-3 mt-4' style={{ overflowX: 'scroll', maxWidth: '100%' }}>
         <table className="table m-0 w-100">
           <thead>
             <tr>
@@ -642,7 +641,7 @@ const Dashboard = () => {
                   <td style={{ whiteSpace: 'nowrap' }}>{user.phone}</td>
                   <td style={{ whiteSpace: 'nowrap' }}>{user.address}</td>
                   <td style={{ whiteSpace: 'nowrap' }}>{user.about}</td>
-                  <td >{user.date_of_birth}</td>
+                  <td style={{ whiteSpace: 'nowrap' }}>{user.date_of_birth}</td>
                   <td>{user.latitude}</td>
                   <td>{user.longitude}</td>
                 </tr>
@@ -656,56 +655,3 @@ const Dashboard = () => {
 
 export default Dashboard;
 
-{/* <div className='col-12 col-lg-6 ms-2 my-3'>
-        <div>
-          <span className='fw-bold'>Flow Charts</span>
-        </div>
-        <div className='d-md-flex'>
-          <div className='mx-2 ms-md-5'>
-            <img src={card_1} alt="Card 1" className='d-none d-lg-inline-flex' style={{ width: '350px', height: 'auto' }} />
-            <img src={card_1} alt="Card 1" className='d-none d-md-inline-flex d-lg-none' style={{ width: '250px', height: 'auto' }} />
-            <img src={card_1} alt="Card 1" className='d-md-none' style={{ width: '100%', height: 'auto' }} />
-          </div>
-          <div className='mx-2 mt-3 mt-md-0 ms-md-5'>
-            <img src={card_2} alt="Card 2" className='d-lg-none' style={{ width: '100%', height: 'auto' }} />
-            <img src={card_2} alt="Card 2" className='d-none d-lg-inline-flex' style={{ width: '400px', height: 'auto' }} />
-          </div>
-        </div>
-      </div>
-      <div className='col-12 col-lg-6'>
-        <div className='ms-2'>
-          <span className='fw-bold'>Table</span>
-        </div>
-        <div className='ms-3' style={{ overflowX: 'auto', maxWidth: '100%' }}>
-        <table className="table w-100">
-          <thead>
-            <tr>
-              <th scope="col">S.NO</th>
-              <th scope="col">FIRSTNAME</th>
-              <th scope="col">LASTNAME</th>
-              <th scope="col">EMAIL ID</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">1</th>
-              <td>Kavin</td>
-              <td>Kumar</td>
-              <td>KavinKumar@gmail.com</td>
-            </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td>Logan</td>
-              <td>athan</td>
-              <td>logonaathan@gmail.com</td>
-            </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td>Jaavith</td>
-              <td>V</td>
-              <td>Jaavith@gmail.com</td>
-            </tr>
-          </tbody>
-        </table>
-        </div>
-      </div> */}

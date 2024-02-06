@@ -1,95 +1,54 @@
 .calculator {
-    width: 300px;
-    margin: auto;
-    margin-top: 4%; 
-    margin-bottom: 4%; 
-    padding: 20px;
-    border: 1px solid #3498db;
-    border-radius: 5px;
-    background-color: #ecf0f1; 
-    transition: background-color 0.3s ease; 
-  }
+  width: 200px;
+  margin: auto;
+  margin-top: 250px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.display {
   
-  .calculator:hover {
-    background-color: #48a6ce; 
-  }
-  
-  .display {
-    margin-bottom: 10px;
-    margin-right: 15px;
-  }
-  
-  input {
-    width: 100%;
-    font-size: 1.5em;
-    padding: 5px;
-  }
-  
-  .result {
-    font-size: 1.2em;
-    color: #2c3e50; 
-  }
-  
-  .buttons {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
-  }
-  
-  button {
-    padding: 10px;
-    font-size: 1.2em;
-    border: 1px solid #3498db; 
-    border-radius: 5px;
-    cursor: pointer;
-    background-color: #bcdeb1;
-    transition: background-color 0.3s ease, transform 0.3s ease; 
-    color: #5a5353;
-  }
-  
-  button:hover {
-    background-color: #3cad25;
-    color: wheat;
-  }
- 
-  @keyframes buttonPulse {
-    0% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.2);
-    }
-    100% {
-      transform: scale(1);
-    }
-  }
-  
-  button.animated {
-    animation: buttonPulse 0.5s infinite alternate; 
-  }
-  
- 
-  button.cos,
-  button.sin,
-  button.tan {
-    background-color: #3498db; 
-    color: #fff;
-  }
-  
-  button.cos:hover,
-  button.sin:hover,
-  button.tan:hover {
-    background-color: #2980b9; 
-  }
-  
-  body {
-    background-color: #b3b5be;
-  }
-  .grow{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-grow: 1;
-    background-color: #C9D7DD;
-  }
-  
+  margin-bottom: 10px;
+  text-align: right;
+}
+
+.input {
+  font-size: 1.5em;
+  background-color: aqua;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 5px;
+}
+
+.result {
+  font-size: 1.2em;
+  padding: 5px;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+button {
+  font-size: 1.2em;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #f5f5f5;
+}
+
+button:hover {
+  background-color:#00ffff;
+}
+
+
+

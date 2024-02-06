@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Form from 'react-bootstrap/Form';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const RegistrationForm = () => {
@@ -21,11 +22,11 @@ const RegistrationForm = () => {
   };
 
   return (
-    <div className="container my-5 px-5 ">
-      <h1>Registration Form</h1>
+    <div className="container pt-3 px-5 ">
+      <h1>Form</h1>
       <form onSubmit={handleSubmit}>
-        <div className="mt-4">
-          <label htmlFor="firstName" className="form-label" style={{ fontWeight: 'bold' }}>
+        <div className="mt-3">
+          <label htmlFor="firstName" className="form-label" >
             First Name
           </label>
           <input
@@ -35,13 +36,13 @@ const RegistrationForm = () => {
             name="firstName"
             value={formData.firstName}
             onChange={handleChange}
-            placeholder="Enter your FirstName"
+            placeholder="FirstName"
             required
           />
         </div>
 
         <div className="mt-2">
-          <label htmlFor="lastName" className="form-label" style={{ fontWeight: 'bold' }}>
+          <label htmlFor="lastName" className="form-label">
             Last Name
           </label>
           <input
@@ -51,63 +52,31 @@ const RegistrationForm = () => {
             name="lastName"
             value={formData.lastName}
             onChange={handleChange}
-            placeholder="Enter your LastName"
+            placeholder="LastName"
             required
           />
         </div>
 
-        <div  className="mt-2">
-          <label htmlFor="email" className="form-label" style={{ fontWeight: 'bold' }}>
-            Email
+        <div className="mt-2">
+          <label htmlFor="email" className="form-label" >
+            Gmail
           </label>
           <input
-            type="email"
+            type="gmail"
             className="form-control"
-            id="email"
-            name="email"
+            id="gmail"
+            name="gmail"
             value={formData.email}
             onChange={handleChange}
-            placeholder="Enter your Email"
+            placeholder="Gmail"
             required
           />
         </div>
 
-        <div className="mt-2 ">
-          <label htmlFor="gender" className="form-label" style={{ fontWeight: 'bold' }}>
-            Gender
-          </label>
-          <div className="form-check ms-3">
-            <input
-              type="radio"
-              className="form-check-input"
-              id="male"
-              name="gender"
-              value="male"
-              onChange={handleChange}
-              checked={formData.gender === 'male'}
-            />
-            <label htmlFor="male" className="form-check-label">
-              Male
-            </label>
-          </div>
-          <div className="form-check ms-3 mt-2">
-            <input
-              type="radio"
-              className="form-check-input"
-              id="female"
-              name="gender"
-              value="female"
-              onChange={handleChange}
-              checked={formData.gender === 'female'}
-            />
-            <label htmlFor="female" className="form-check-label">
-              Female
-            </label>
-          </div>
-        </div>
 
-        <div  className="mt-2">
-          <label htmlFor="password" className="form-label" style={{ fontWeight: 'bold' }}>
+
+        <div className="mt-2">
+          <label htmlFor="password" className="form-label">
             Password
           </label>
           <input
@@ -117,28 +86,58 @@ const RegistrationForm = () => {
             name="password"
             value={formData.password}
             onChange={handleChange}
-            placeholder="Enter your Password"
+            placeholder="Password"
             required
           />
         </div>
 
-        <div  className="mt-2">
-          <label htmlFor="confirmPassword" className="form-label" style={{ fontWeight: 'bold' }}>
-            Confirm Password
+        <div className="mt-2">
+          <label htmlFor="State" className="form-label" >
+            State
           </label>
           <input
-            type="password"
+            type="Text"
             className="form-control"
-            id="confirmPassword"
-            name="confirmPassword"
-            value={formData.confirmPassword}
+            id="State"
+            name="State"
+            value={formData.Pincode}
             onChange={handleChange}
-            placeholder="Enter your confirmPassword"
+            placeholder="State"
             required
           />
         </div>
-        
-        <button type="submit" className="btn btn-primary mt-4">
+
+        <div className="mt-2">
+          <label htmlFor="State" className="form-label" >
+            Pincode
+          </label>
+          <input
+            type="Text"
+            className="form-control"
+            id="Pincode"
+            name="Pincode"
+            value={formData.Pincode}
+            onChange={handleChange}
+            placeholder="Pincode"
+            required
+          />
+        </div>
+
+
+        <div className="mt-3">
+
+          <Form.Check
+            className='form-group'
+            required
+            label="Agree to terms and conditions"
+            feedback="You must agree before submitting."
+            feedbackType="invalid"
+          />
+        </div>
+
+
+
+        <button type="submit" className="btn btn-primary mt-2 mb-4">
           Submit
         </button>
       </form>

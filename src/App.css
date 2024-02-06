@@ -1,19 +1,21 @@
 .sidebar{
-    background-color: #FFF3CF;
+    background-color: white;
     height: 100vh !important;
 }
 
-.sidebar span:hover {
-    border-left: 4px solid #E8C872; 
+.sidebar :hover {
+    background-color: #d6d6d6; 
 }
+
+
 
 .sidebar span:focus {
     outline: none; 
-    border-left: 4px solid #E8C872 ;
+    border-left: 4px solid #b0a2d3 ;
 }
 
 .body{
-    background-color: #C9D7DD;
+    background-color:#d6d6d6;
 }
 
 .just{
@@ -21,4 +23,6 @@
     flex-direction: row;
     justify-content: center;
 }
+
+
 

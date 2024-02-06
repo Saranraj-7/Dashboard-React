@@ -4,31 +4,36 @@ import Canvas from './Offcanvas';
 import { InputGroup, FormControl } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Header.css';
-import logo from "../Asset/apple.png";
+
+
+import fts2 from "../Asset/fts2.png";
+import { Icon } from '@iconify/react';
+
+
 
 const Header = ({selectedComponent,setSelectedComponent}) => {
 return (
 <Row className='m-0 header'>
-   <Col xs={10} className='p-4'>
+   <Col xs={10} lg={12} xl={12} className='p-4'>
    <div className='d-flex justify-content-between'>
       <div>
-         <img src={logo} alt="Description of the " style={{ width: '35px', height: '35px'}} />
-         <span className='d-lg-none d-xl-inline-flex'>APPLE - NIN</span>
+         <img src={fts2} alt="Description of the " style={{ width: '80px', height: '40px'}} />
+         <span className='d-lg-none d-xl-inline-flex  fs-3 fw-semibold text-light ms-2'>FTS Academy</span>
       </div>
-      <div>
-      <InputGroup style={{ width: '300px' }} className='d-lg-inline-flex d-none ms-5'>
-      <FormControl
-        type="text"
-        placeholder="Search"
-        style={{ fontSize: '14px', padding: '8px' }}
-      />
-    </InputGroup>
-      </div>
-      <div className='mt-2 d-lg-inline-flex d-none'>
-         <span className='ms-xl-5' >HOME</span>
-         <span className='ms-xl-5 ms-3'>SERVICES</span>
-         <span className='ms-xl-5 ms-3'>CAREERS</span>
-         <span className='ms-xl-5 ms-3'>CONTACT US</span>
+    
+      <div className='mt-2 d-lg-inline-flex  d-none'>
+         <span className='ms-xl-5  fs-5' >What we do</span>
+         <span className='ms-xl-5 ms-3 fs-5'>Who we are</span>
+         <span className='ms-xl-5 ms-3 fs-5'>Insights</span>
+         <span className='ms-xl-5 ms-3 fs-5'>Carrers</span>
+         <span className='ms-xl-5 ms-3 fs-5'>Investors</span>
+         <span className='ms-xl-5 ms-3 fs-5'>Contact Us</span>
+       
+         <Icon icon="iconoir:profile-circle"  className='ms-xl-5 ms-3 d-flex justify-content-end'  style={{ fontSize: '28px' }} />
+         
+         
+         
+         
       </div>
    </div>
    </Col>
