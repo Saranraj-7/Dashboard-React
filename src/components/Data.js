@@ -765,5 +765,4 @@ const userData = [
       "longitude": -105.494085
     }
   ];
-``
   export default userData;

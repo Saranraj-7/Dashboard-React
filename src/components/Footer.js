@@ -26,6 +26,8 @@ const Footer = () => {
           <img className='ms-2' src={americanexpress} alt="Description of the " style={{ width: '60px', height: '40px'}} />
           <img className='ms-2' src={paypal} alt="Description of the " style={{ width: '60px', height: '40px'}} />
           </div>
+
+          
        </div>
       
      

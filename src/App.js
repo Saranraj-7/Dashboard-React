@@ -10,16 +10,15 @@ import './App.css'
 import Dashboard from './components/Dashboard';
 import Footer from './components/Footer';
 import Tables from './components/Tables';
-import data from './components/data.json';
+import data from './components/Data.js';
 import Table2 from './components/Table2';
 import Viewdetails from './components/Viewdetails';
+import userData from './components/Data';
 
 
 const App = () => {
   const [selectedComponent, setSelectedComponent] = useState(null);
   const [sideComponent, setSideComponent] = useState(null);
-
-
   console.log(selectedComponent)
   return (
     <Router>
@@ -41,8 +40,8 @@ const App = () => {
             <Route path='/calculator' element={<Calculator />}></Route>
             <Route path='/form' element={<Form />}></Route>
             <Route path='/table' element={<Tables/>}></Route>
-            <Route path='/user/userId' element={<Viewdetails />}></Route>
-            <Route path='/Table2' element={<Table2/>}></Route>
+            <Route path='/user/:user_Id' element={<Viewdetails user={data} />}></Route>
+            <Route path='/Table2' element={<Table2 />}></Route>
           </Routes>
         </Col>
       </div>

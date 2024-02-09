@@ -35,9 +35,10 @@ function Canvas({ setSelectedComponent }) {
             <span  onClick={() => handleComponentClick('Form')} className='fst py-2'>
               Form
             </span>
-            <span onClick={() => handleComponentClick('Dashboard')} className='fst py-2'>DashBoard</span>
-            <span onClick={() => handleComponentClick('Table')} className='fst py-2'>Table</span>
-            <span className='fst py-2'>About</span>
+            <span onClick={() => handleComponentClick('Dashboard')} className=' py-2'>DashBoard</span>
+            <span onClick={() => handleComponentClick('Table')} className=' py-2'>Table</span>
+            <span onClick={() => handleComponentClick('Table2')} className='py-2'>Table2</span>
+            <span className='py-2'>About</span>
           </div> 
         </Offcanvas.Body>
       </Offcanvas>
